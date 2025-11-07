@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleuts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sirivennela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="png">
+    <title>Descendants</title>
+</head>
+<body>
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Descendants</h1>
+            <h2>Born from Chaos, Bound by Magic, United by Love.</h2>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown"><a href="#about" class="dropbtn">About</a>
+            <div class="dropdown-content">
+                <a href="#profile">Profile</a>
+                <a href="#history">Movies</a>
+                <a href="#values">Values & Messages </a>
+                <a href="#members">Main Characters</a>
+            </div>
+            </li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="main">
+    <section id="home" class="home-section">
+        <div class="home-overlay"></div>
+        <div class="home-content">
+            <h1>Welcome to the World of Descendants</h1>
+            <p>In a world divided between light and shadow, the children of heroes and villains are given a chance to rewrite their story. From the glittering halls of Auradon to the rugged streets of the Isle of the Lost, their paths collide in a tale of courage, love, and destiny.
+            <br>
+            Descendants is not just about who they were born to be — it’s about who they choose to become. Through friendship, struggle, and magic, they discover that goodness isn’t inherited… it’s created.</p>
+            <button class="home-btn" onclick="scrollToSection('profile')">Step Into the Magic</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div id="profile" class="about-block">
+            <h2>Profile</h2>
+            <p>
+                <em>Descendants</em> merupakan seri film fantasi musikal yang diproduksi oleh Disney Chanel. Cerita yang berpusat pada anak-anak dari karakter klasik Disney - baik pahlawan maupun penjahat - yang hidup terpisah di dua dunia :
+                <br>
+                <br>
+                <strong>Auradon</strong>, kerajaan megah yang dipenuhi cahaya, keindahan, dan kebaikan. Dimana para keturunan pahlawan hidup dalam kemakmuran, dikelilingi oleh keajaiban dan cinta. Setiap sudutnya berkilau dengan harmoni dan keanggunan, dipimpin oleh Raja Beast dan Ratu Belle. Namun, di balik kemegahan itu, masih ada dinding pembatas yang memisahkan mereka dari sisi gelap dunia.
+                <br>
+                <br>
+                <strong>Isle of The Lost</strong>, kebalikan dari Auradon - pulau kelam yang terkurung sihir penghalang, tempat para Villain dan keturunannya diasingkan. Disana tidak ada keajaiban, hanya bayangan masa lalu dan keinginan untuk kebebasan. Meski keras dan suram, Isle memiliki solidaritas, dan keberanian untuk bermimpi meski dalam kegelapan.
+                <br>
+                <br>
+                Ketika <strong>Ben</strong>, putra Belle dan Beast, menjadi raja muda Auradon, ia memutuskan untuk membuka gerbang bagi generasi baru dari Isle agar bisa bersekolah di Auradon Prep. Dari keputusan berani itulah, lahir kisah tentang persahabatan, cinta, dan perjalanan menemukan jati diri - membuktikan bahwa kebaikan bukanlah warisan, tetapi pilihan yang lahir dari hati.  
+            </p>
+        </div>
+        <div id="history" class="about-block">
+            <h2>Movies</h2>
+            <div class="movie-card-container">
+                <div class="movie-card">
+                    <img src="Descendants poster.jpeg" alt="Descendants (2015)">
+                    <h3>Descendants (2015)</h3>
+                    <button class="movie-btn" onclick="openPopup('popup-desc1')">Unfold the Tale</button>
+                </div>
+                <div class="movie-card">
+                    <img src="Descendants 2.jpeg" alt="Descendants (2017)">
+                    <h3>Descendants 2 (2017)</h3>
+                    <button class="movie-btn" onclick="openPopup('popup-desc2')">Unfold the Tale</button>
+                </div>
+                <div class="movie-card">
+                    <img src="Descendants 3.jpeg" alt="Descendants (2019)">
+                    <h3>Descendants 3 (2019)</h3>
+                    <button class="movie-btn" onclick="openPopup('popup-desc3')">Unfold the Tale</button>
+                </div>
+                <div class="movie-card">
+                    <img src="Descendants_ The rise of Red official poster.jpeg" alt="The Rise of Red(2024)">
+                    <h3>Descendants The Rise of Red (2024)</h3>
+                    <button class="movie-btn" onclick="openPopup('popup-red')">Unfold the Tale</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-desc1">
+            <div class="popup-content">
+                <h2>Descendants (2015)</h2>
+                <p>Mal, Evie, Jay, dan Carlos, anak-anak dari para Villain terkenal, mendapat kesempatan untuk meninggalkan Isle of The Lost untuk belajar di Auradon Prep. Di tempat baru, mereka menemukan arti dari kebaikan, cinta, persahabatan, dan kebebasan memilih jalan hidup mereka.</p>
+                <button class="close-btn" onclick="closePopup('popup-desc1')">Close the Spell</button>
+            </div>
+        </div>
+        <div class="popup" id="popup-desc2">
+            <div class="popup-content">
+                <h2>Descendants 2 (2017)</h2>
+                <p>Merasa tidak cocok dengan kehidupan baru di Auradon, Mal memutuskan kembali ke Isle of The Lost. Mal berhdapan dengan Uma - putri Ursula - yang menentang posisinya. Film ini memperlihatkan perjuangan Mal untuk menerima dirinya sepenuhnya.</p>
+                <button class="close-btn" onclick="closePopup('popup-desc2')">Close the Spell</button>
+            </div>
+        </div>
+        <div class="popup" id="popup-desc3">
+            <div class="popup-content">
+                <h2>Descendants 3 (2019)</h2>
+                <p>Sesuatu yang baru kembali muncul ketika mulai runtuhnya dinding pembatas antara Auradon dan Isle of The Lost. Mal dan teman-temannya harus bersatu untuk melindungi kedua dunia dan membuktikan bahwa persatuan lebih kuat dari kegelapan.</p>
+                <button class="close-btn" onclick="closePopup('popup-desc3')">Close the Spell</button>
+            </div>
+        </div>
+        <div class="popup" id="popup-red">
+            <div class="popup-content">
+                <h2>Descendants The Rise of Red (2024)</h2>
+                <p>Red, putri dan Queen of Hearts, dan Chloe, putri dari Cinderella, terpaksa bekerja sama dalam perjalanan lintas waktu untuk menyelamatkan masa depan Auradon. Film yang membuka babak baru dari dunia Descendants dengan karakter dan sihir yang baru.</p>
+                <button class="close-btn" onclick="closePopup('popup-red')">Close the Spell</button>
+            </div>
+        </div>
+
+        <div id="values" class="about-block values-section">
+            <h2>Values & Messages</h2>
+            <p class="values-intro">
+                Kisah <b>Descendants</b> bukan hanya tentang sihir, warna, dan petualangan. Film ini menggambarkan tentang pengampunan, keberanian untuk berubah, dan kekuatan cinta yang mampu menembus batas. Baik di Auradon maupun di Isle of The Lost, setiap karakter belajar bahwa kebaikan bukan tentang asal kita, melainkan tentang siapa yang kita pilih.
+            </p>
+            <div class="values-content">
+                <h3>✨Redemption✨</h3>
+                <p>Setiap orang berhak untuk memiliki kesempatan kedua. Anak-anak para Villain membuktikan bahwa masa lalu tidak menentukan masa depan dan bahkan dari kegelapan cahaya bisa tumbuh.</p>
+                <h3>💫Friendship💫</h3>
+                <p>Mal, Evie, Jay, dan Carlos membuktikan bahwa persahabatan sejati mampu mengalahkan segala rintangan. Dukungan dan kepercayaan satu sama lain adalah kekuatan sejati yang melampaui sihir apapun.</p>
+                <h3>🪄Love & Kindness🪄</h3>
+                <p>Sihir terkuat bukanlah mantra atau ramuan, melainkan cinta. Cinta menyembuhkan, menyatukan, dan mengubah hati siapapun. Melalui cinta, mereka belajar bahwa kebaikan adalah pilihan yang penuh keberanian.</p>
+                <h3>⚡Courage & Choice⚡</h3>
+                <p>Keberanian sejati bukan berati tidak pernah takut, tapi berani memilih yang benar meskipun dunia meragukan. Setiap karakter dalam film ini membuktikan bahwa jalan hidup bisa diubah melalui pilihan dan tekad.</p>
+            </div>
+        </div>
+
+        <div id="members" class="about-block characters-section">
+            <h2>Main Characters</h2>
+            <div class="char-container">
+                <div class="char-card">
+                    <img src="https://i.pinimg.com/1200x/84/6a/9f/846a9f87c248b254de9e59e634946925.jpg" alt="Mal">
+                    <h3>Mal Bertha</h3>
+                    <button class="detail-btn">See More Magic</button>
+                    <p>Putri dari Maleficent dan Hades yang cerdas dan kuat, namun berjuang menyeimbangkan sisi baik dan jahat dalam dirinya. Setelah pindah ke Auradon, ia belajar arti kebaikan, menggunakan kekuatan sihirnya untuk membantu orang lain, dan pada akhir kisah menjadi Ratu Auradon yang bijaksana.</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://i.pinimg.com/736x/89/ec/76/89ec767b8d7bf716e0451cf53c6ec0b7.jpg" alt="Evie">
+                    <h3>Evie Grimhilde</h3>
+                    <button class="detail-btn">See Her Grace</button>
+                    <p>Putri Evil Queen yang cantik, cerdas, dan berbakat dalam desain busana. Awalnya terobsesi pada kecantikan dan status, ia kemudian belajar bahwa kecerdasan dan kebaikan hati jauh lebih berharga.</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://i.pinimg.com/1200x/9e/34/3d/9e343d819825562a565f2680047d5965.jpg" alt="Jay">
+                    <h3>Jay</h3>
+                    <button class="detail-btn">Unmask The Legend</button>
+                    <p>Putra dari Jafar yang tumbuh di Isle of The Lost sebagai pencuri ulung dan astlet yang tangguh. Meski awalnya egois dan terbiasa bekerja sendiri, setelah pindah ke Auradon ia belajar arti kerja tim lewat Turnamen inter-siswa serta mulai melindungi teman-temannya.</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://i.pinimg.com/1200x/b8/80/5a/b8805a2740b30802b72421e15a080d0a.jpg" alt="Carlos">
+                    <h3>Carlos Oscar De Vil</h3>
+                    <button class="detail-btn">Dicover His Heart</button>
+                    <p>Putra dari Cruella De Vil yang awalnya dibesarkan dengan rasa takut terhadap anjing dan kurang percaya diri. Carlos ternyata sangat cerdas dalam teknologi dan penemuan, serta sangat royal terhadap teman-temannya. Ketika pindah ke Auradon, ia menghadapi ketakutan dan masa lalunya, dan akhirnya berkembang menjadi lebih percaya diri dan berbaik hati.</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://i.pinimg.com/1200x/61/de/23/61de23508d9b658acc4c54047d0e99e3.jpg" alt="Ben">
+                    <h3>Benjamin Florian Beast</h3>
+                    <button class="detail-btn">Learn His Story</button>
+                    <p>Putra dari Belle dan Beast, yang kemudian diangkat menjadi raja di Auradon. Ia digambarkan sebagai remaja yang baik, adil, dan terbuka terhadap anak-anak Villain dari Isle of The Lost, karena ia percaya bahwa masa lalu keluarga seseorang tidak mendefinisikan siapa mereka.</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://i.pinimg.com/1200x/69/9f/c0/699fc05bfe2fc48bc072be62a1d20881.jpg" alt="Uma">
+                    <h3>Uma</h3>
+                    <button class="detail-btn">Know Her Truth</button>
+                    <p>Putri dari Ursula. Ia dikenal sebagai kapten kru bajak laut di Isle of The Lost, manipulatif dan ambisius, tetapi dibalik sikap kerasnya terdapat rasa loyalitas terhadap teman dan keinginan kuat untuk diakui. Dengan kekuatan "sea magic" Uma membawa konflik yang kompleks antara kegelapan dan jalan hidupnya.</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://i.pinimg.com/1200x/5b/34/a1/5b34a1565c1db0e7dceac9f34a611520.jpg" alt="Audrey">
+                    <h3>Audrey Rose</h3>
+                    <button class="detail-btn">Break The Spell</button>
+                    <p>Putri dari Aurora dan Pangeran Phillip, yang tumbuh di Auradon dan dikenal dengan putri yang sangat percaya diri, populer, dan perfeksionis. Alwanya ia menentang anak-anak Villain dari Isle of The Lost karena latar belakang mereka. Namun ia berubah menjadi jahat karena cumburu dan kecewa atas perubahan status, dan kemudian menyadari kesalahannya.</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://i.pinimg.com/736x/d3/38/ee/d338ee1d988e07687145cfacc58307d6.jpg" alt="Red">
+                    <h3>Red Hearts</h3>
+                    <button class="detail-btn">See Her Spark</button>
+                    <p>Putri dari Queen of Hearts dari Wonderland, yang muncul sebagai tokoh utama di Descendants The Rise of Red. Digambarkan sebagai remaja cerdas, pemberontak, dan sangat ingin bebas dari kendali Ibunya. Red memiliki sifat yang kompleks, meski pemberontak, ia tetap memilki sisi baik dan setia.</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://i.pinimg.com/736x/ab/b5/91/abb591f5c236c87ab84b305757c96b31.jpg" alt="Chloe">
+                    <h3>Chloe Charming</h3>
+                    <button class="detail-btn">Behind Her Smile</button>
+                    <p>Putri dari Cinderella dan King Charming. Digambarkan sebagai sebagai remaja yang ceria, jenius secara akademik, atletik, dan agak naif. Chloe membawa pedang lewat tim "Sword & Shields" menunjukan bahwa ia aktif dan berani.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="articles-section">
+        <h2>Chronicles of Descendants</h2>
+        <p class="subtitles">Menemukan makna, sihir, dan hati di setiap sudut dunia Descendants</p>
+        <div class="article-preview">
+            <h3>Auradon : Dunia di Balik Cahaya</h3>
+            <p>Kerajaan Auradon tampak sempurna dengan penuh warna dan keajaiban. Namun di balik dinding istana, tersimpan cerita tentang keadilan, harapan, dan keputusan yang mengubah masa depan dua dunia...</p>
+            <a href="article1.html" class="read-btn">Read More</a>
+        </div>
+        <div class="article-preview">
+            <h3>Isle of The Lost : Dari Kegelapan Menuju Harapan</h3>
+            <p>Di pulau yang terasingkan, anak-anak para villain belajar bertahan dalam kerasnya dunia tanpa sihir. Namun di balik kegelapan itu, mereka menemukan arti keberanian dan kebebasan sejati...</p>
+            <a href="article2.html" class="read-btn">Read More</a>
+        </div>
+        <div class="article-preview">
+            <h3>The Rise of Red : Dua Dunia yang Bertemu</h3>
+            <p>Ketika Auradon dan Isle kembali terhubung, dua gadis dari dunia berbeda, Red dan Chloe,belajar bahwa perbedaan justru bisa mempersatukan....</p>
+            <a href="article3.html" class="read-btn">Read More</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>Moments from Two Worlds</h2>
+        <p class="subtitles">Fragmen sihir yang terabadikan dalam setiap momen dua dunia</p>
+        <div class="gallery-container">
+            <img src="https://i.pinimg.com/736x/88/14/d0/8814d0796aba23f65747b47589fb4432.jpg" alt="Auradon Prep">
+            <img src="https://i.pinimg.com/1200x/af/d0/94/afd094ac74c408b3713d9429a6839a37.jpg" alt="Isle of The lost">
+            <img src="https://i.pinimg.com/736x/e7/5f/be/e75fbee2cffabc37baa2deccdfe87218.jpg" alt="VK">
+            <img src="https://i.pinimg.com/736x/4d/22/62/4d22628ce941a9560496decea6dacb26.jpg" alt="Buku Sihir Mal">
+            <img src="https://i.pinimg.com/1200x/79/1f/4c/791f4c38c4f44c6a06d7dcbc8b479698.jpg" alt="Royal Ball">
+            <img src="https://i.pinimg.com/1200x/bd/1d/3e/bd1d3e55c68d08905f294975d0baea2b.jpg" alt="Red & Chloe">
+            <img src="https://i.pinimg.com/1200x/ca/4c/09/ca4c094f8dc873e7bd3203faac49bd11.jpg" alt="be our guest">
+            <img src="https://i.pinimg.com/736x/65/5c/cc/655ccc97fcb7c77015aa555c85ef62a4.jpg" alt="vk & pirates">
+            <img src="https://i.pinimg.com/736x/d0/29/c3/d029c315b86c9cde3926ab397586df15.jpg" alt="Descendants 1">
+            <img src="https://i.pinimg.com/1200x/25/9b/e8/259be87aa8ba45cc7a7239879c1d068a.jpg" alt="Descendants 2">
+            <img src="https://i.pinimg.com/1200x/97/99/05/9799052c8aa8439a31d95cbe9406347c.jpg" alt="Descendants 3">
+            <img src="https://i.pinimg.com/736x/30/cb/5c/30cb5cf72952e6bf6152b38b6be24809.jpg" alt="Descendants Red">
+        </div>
+    </section>
+
+    <section id="registration" class="registration-section">
+        <h2>Become Part of The Story</h2>
+        <p class="subtitles">Every great tale begins with the name.
+            <br>
+            Sign up and step into a world where magic meets destiny - your story starts here
+        </p>
+        <form class="registration-form" id="registration-form" onsubmit="event.preventDefault();showMessage();">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Type Your Whimsical Name...">
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Magic Mail...">
+
+            <label for="realm">Chose Your Realm</label>
+            <select name="realm" id="realm">
+                <option value="auradon">Auradon</option>
+                <option value="isle">Isle of The Lost</option>
+            </select>
+
+            <label for="favorite">Character You Admire Most</label>
+            <select name="favorite" id="favorite">
+                <option value="Mal">Mal</option>
+                <option value="Evie">Evie</option>
+                <option value="Jay">Jay</option>
+                <option value="Carlos">Carlos</option>
+                <option value="Ben">Ben</option>
+                <option value="Uma">Uma</option>
+                <option value="Audrey">Audrey</option>
+                <option value="Red">Red</option>
+                <option value="Chloe">Chloe</option>
+            </select>
+
+            <label for="reason">Your Reason to Join The Realm</label>
+            <textarea name="reason" id="reason" rows="5" placeholder="Share why you want to be part of this magical world..."></textarea>
+
+            <button type="button" class="submit-btn" onclick="showMessage()">Join The Story</button>
+        </form>
+        <p id="success-message" class="hidden-message">Your Magic Has Been Sent! Welcome to the Realm of Descendants✨
+        </p>
+    </section>
+    </div>
+
+    <div class="sidebar">
+        <div class="widget jam">
+            <h3>VK TIME</h3>
+            <div id="clock">--:--:--</div>
+        </div>
+
+        <div class="widget video">
+            <h3>Sneak Peek</h3>
+            <iframe width="100%" height="180" src="https://www.youtube.com/embed/3Pk4-lzowDM?si=voTT8_liiG996iuZ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="widget spotify">
+            <h3>Enchanted Tracks</h3>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6notdj85QIGeqR1zKqT3Oh?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <br>
+            <br>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/4Rk63Jz61wwbmQru0PdltI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <br>
+            <br>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1rDO59SgTsY1HV5ZBtl9Hy?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <br>
+            <br>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3KPOdANPLDWwF0U4TOzjrK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+    </div>
+
+    <footer id="contact" class="footer-section">
+        <h2>Connect with the Realm</h2>
+        <p class="footer-text">
+            Join the adventure of the Descendants in a world full of magic and choices.
+        </p>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/disneydescendants?igsh=aWw5c3I2aThhN3Vu" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Disney" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://youtube.com/@disneychannel?feature=shared" target="_blank" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <p class="footer-credit">
+            © 2025 <span>Descendants Project</span> | Walt Disey
+        </p>
+    </footer>
+    
+    <script src="UTS.js"></script>
+
+</body>
+</html>
